@@ -1,0 +1,20 @@
+（1）在 jQuery 中如何判断对象是否存在
+	正确使用判断对象是否存在应该用：
+
+	if($("#id").length>0){
+		//...
+	}else{
+		//...
+	}
+
+	或者直接使用原生的 Javascript 代码来判断：
+	if(document.getElementById("id")){
+		//...
+	}else{
+		//...
+	}
+
+（2）<img>标签常用	
+	$img = $li.find('img');
+	$img.attr('src',file.ret);
+    $img.css({width: 100, height: 100})
